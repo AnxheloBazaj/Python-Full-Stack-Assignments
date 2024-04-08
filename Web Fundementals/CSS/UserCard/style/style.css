@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.pad-20{
+    padding: 20px;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.w-500{
+    width: 500px;
+}
+.h-250{
+    height: 200px;
+}
+.h-80{
+    height: 80px;
+}
+.bg-blue{
+    background-color:  #17a2b8;
+}
+.border-solid{
+    border-style: solid;
+    border-width: 3px;
+    border-top: none;
+    border-color: #d6d6d6;
+    box-sizing: border-box;
+}
+.box-sizing{
+    box-sizing: border-box;
+}
+.user-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+    top: 40px;
+    border: 2px solid #d6d6d6;
+    padding: 2px;
+}
+.prof-pad{
+    padding: 30px 20px 10px 20px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.gap-5{
+    gap:0 10px;
+}
+.justify-space{
+    justify-content: space-evenly;
+}

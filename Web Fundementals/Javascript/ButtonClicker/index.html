@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <form class="d-flex align-center justify-between p-20 m-bottom">
+            <h1>Dojonary</h1>
+            <input type="search" placeholder="Search">
+            <button class="login-button" type="button" onclick=" logout(this)">Log in</button> 
+        </form>
+    </header>
+    <main>
+        <div class="d-flex align-start justify-between m-bottom">
+            <div class="d-flex align-center w-60 border-solid p-20">
+                <div class="d-flex flex-column align-center w-30 gap-7 p-r-20">
+                    <h1>ninja</h1>
+                    <h5>noun</h5>
+                    <p>Plural: ninjas</p>
+                    <button class="like-button" type="button" onclick="likes()">13 likes</button>
+                </div>
+                <p class="p-l-r-20">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+            </div>
+            <div class=" w-20 border-solid p-20">
+                <h3 >Dojonary is defined by <span>YOU</span></h3>
+                <button class="def-button" type="button" onclick="removeDef(this)">Add a definition</button>
+                <!-- <input class="def-button" type="submit" value=""> -->
+            </div>
+        </div>
+        <div class="d-flex align-center w-60 border-solid p-20">
+            <div class="d-flex flex-column align-center w-30 gap-7 p-r-20">
+                <h1>ninja</h1>
+                <h5>noun</h5>
+                <p>Plural: ninjas</p>
+                <button class="like-button" type="button" onclick="likes()">37 likes</button>
+            </div>
+            <p >A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like solutions</p>
+        </div>
+        
+
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>

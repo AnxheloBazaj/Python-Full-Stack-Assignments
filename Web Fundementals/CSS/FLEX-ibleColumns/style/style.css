@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.mrg-10{
+    margin: 10px;
+}
+.pdg-10{
+    padding: 10px;
+}
+.row{
+    display: flex;
+}
+.col{
+    flex: 1;
+    background-color: #609ea0;
+    padding: 10px;
+    
+}
+.col-2{
+    flex: 2;
+    background-color: #609ea0;
+    padding: 10px;
+}
+.col-3{
+    flex: 3;
+    background-color: #609ea0;
+    padding: 10px;
+}

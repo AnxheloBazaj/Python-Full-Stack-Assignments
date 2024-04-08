@@ -1,0 +1,24 @@
+h1 {
+    color: white;
+    background-color: black;
+    font-style: italic;
+    padding: 10px;
+}
+
+span {
+    color: aqua;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    background-color: rebeccapurple;
+    font-style: italic;
+}
+
+p {
+    text-align: right;
+    color: darkblue;
+    background-color: skyblue;
+    padding-right: 10px;
+}

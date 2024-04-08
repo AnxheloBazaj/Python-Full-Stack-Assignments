@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="d-flex align-center justify-between p-20 bg-blue">
+            <h1 class="white-text">DojoWeather</h1>
+            <ul class="d-flex justify-between align-center w-50 list-style white-text">
+                <li onclick="alert('Retriving data for: Burbank')">Burbank</li>
+                <li onclick="alert('Retriving data for: Chicago')">Chicago</li>
+                <li onclick="alert('Retriving data for: Dallas')">Dallas</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-20">
+        <div class="d-flex justify-between align-center border-bott">
+            <h1>San Jose</h1>
+            <div>
+                <label for="fav-language">show temperature in:</label>
+                <select name="fav-language" id="fav-language" required onchange="updateContent(this, 'temp')">
+                    <option value="" selected disabled>Select</option>
+                    <option value="℃elcius" >℃</option>
+                    <option value="℉arenheight">℉</option>
+                </select>
+            </div>
+        </div>
+        <div class="d-flex justify-between">
+            <div class="d-flex flex-column w-20 align-center bg-grey gap-20 p-10">
+                <h2>Today</h2>
+                <img class="icons" src="./images/some_rain.png" alt="rainy">
+                <p>some rain</p>
+                <div class="d-flex justify-between w-50">
+                    <p class="max-temp"><span class="temp">24</span>°</p>
+                    <p class="min-temp"><span class="temp">18</span>°</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column w-20 align-center bg-grey gap-20 p-10">
+                <h2>Tomorrow</h2>
+                <img class="icons" src="./images/some_sun.png" alt="rainy">
+                <p>some sun</p>
+                <div class="d-flex justify-between w-50">
+                    <p class="max-temp "><span class="temp">27</span>°</p>
+                    <p class="min-temp "><span class="temp">19</span>°</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column w-20 align-center bg-grey gap-20 p-10">
+                <h2>Friday</h2>
+                <img class="icons" src="./images/some_clouds.png" alt="rainy">
+                <p>some cluds</p>
+                <div class="d-flex justify-between w-50">
+                    <p class="max-temp "><span class="temp">21</span>°</p>
+                    <p class="min-temp "><span class="temp">16</span>°</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column w-20 align-center bg-grey gap-20 p-10">
+                <h2>Saturday</h2>
+                <img class="icons" src="./images/some_sun.png" alt="rainy">
+                <p>some sun</p>
+                <div class="d-flex justify-between w-50">
+                    <p class="max-temp  "><span class="temp">26</span>°</p>
+                    <p class="min-temp  "> <span class="temp">21</span>°</p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </main>
+    <script src="./script.js"> </script>
+</body>
+
+</html>

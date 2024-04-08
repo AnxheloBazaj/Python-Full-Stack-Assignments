@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* My Css starts here */
+.container {
+    padding: 5%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.nav {
+    background: linear-gradient(180deg, rgba(247, 247, 245, 1) 0%, rgba(237, 237, 237, 1) 50%, rgba(224, 224, 224, 1) 100%);
+    border-radius: 5px;
+    height: 55px;
+    border: 2px solid #f3f3f3;
+    margin-bottom: 20px;
+}
+
+.list-style {
+    list-style: none;
+}
+
+.nav ul li {
+    border-right: 2px solid #f3f3f3;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.search-button {
+    width: 200px;
+    height: 30px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.main-pic {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.gap-20 {
+    gap: 20px 0;
+}
+
+.information ul {
+    background-color: #424242;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.information ul li {
+    padding: 10px 20px;
+    height: 20px;
+
+}
+
+.text-blue {
+    color: #92c5e2;
+    font-weight: 400;
+}
+
+.information ul li:first-child {
+    color: #e3e3e2;
+}
+
+.nav ul li:first-child {
+    padding: 0;
+    width: fit-content;
+    height: 57px;
+    object-fit: contain;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.menu_icon1 {
+    padding: 0;
+    width: fit-content;
+    height: 55px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.input {
+    height: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.menu_icon2 {
+    width: 27px;
+    margin-right: 10px;
+}
+
+.section {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid #e2e2e2;
+    padding-bottom: 70px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 25%, rgba(248, 248, 248, 1) 50%, rgba(245, 245, 245, 1) 75%, rgba(243, 243, 243, 1) 100%);
+}
+
+.section h4 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.1;
+    text-decoration: none;
+
+}
+
+.section p {
+    line-height: 1.3;
+    color: #666666;
+    font-size: 15px;
+
+}
+
+.browsing-section {
+    padding: 15px;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.browsing-section p {
+    align-self: center;
+    padding-right: 50px;
+    border-right: 2px solid #e2e2e2;
+    font-size: 30px;
+    color: #b1b1b1;
+
+}
+
+.browseButton {
+    background: linear-gradient(180deg, rgba(88, 153, 197, 1) 0%, rgba(71, 126, 163, 1) 50%, rgba(63, 114, 147, 1) 100%);
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #fafafa;
+    font-size: larger;
+}
+
+.module-images {
+    width: 204px;
+}
+
+.blue-buttons {
+    width: 204px;
+    height: 30px;
+    background: linear-gradient(180deg, rgba(94, 187, 255, 1) 0%, rgba(92, 171, 229, 1) 50%, rgba(90, 158, 209, 1) 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.module-pad {
+    padding: 7px 0px 5px 0px;
+    margin-bottom: 25px;
+}
+
+.module-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.main-menu {
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.menu {
+    margin: 10px;
+    padding: 20px;
+    line-height: 2;
+
+
+}
+
+.heading {
+    color: #333333;
+    font-weight: bold;
+    font-size: 13px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.menu li {
+    color: #6C6C6C;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.contactUs {
+    padding: 22px 0px 25px 0px;
+    color: #6C6C6C;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.info-pad {
+    padding-left: 10px;
+    margin: 0px 15px;
+    border-left: 2px solid grey;
+}
