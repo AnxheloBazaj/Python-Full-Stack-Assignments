@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box1{
+        width: 50px;
+        height: 50px;
+        background-color: {{color1}};
+    }
+    .box2{
+        width: 50px;
+        height: 50px;
+        background-color: {{color2}};
+    }
+    .d-flex{
+        display: flex;
+    }
+</style>
+<body>
+    <h1>**Checkerboard**</h1>
+    {%for ro in range(row)%}
+    {%if ro%2==0%}
+    <div class="d-flex">
+        {%for col in range(colum)%}
+        {%if col%2==0%}
+        <div class="box1"></div>
+        {%else%}
+        <div class="box2"></div>
+        {%endif%}
+        {%endfor%}
+    </div>
+    {%else%}
+    <div class="d-flex">
+        {%for col in range(colum)%}
+        {%if col%2==0%}
+        <div class="box2"></div>
+        {%else%}
+        <div class="box1"></div>
+        {%endif%}
+        {%endfor%}
+    </div>
+    {%endif%}
+    {%endfor%}
+</body>
+</html>
