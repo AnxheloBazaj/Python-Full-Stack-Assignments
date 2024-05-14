@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <table class="table table-dark table-striped-columns w-75 m-auto">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Created at</th>
+                <th scope="col">Updated at</th>
+                <th scope="col">Actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.created_at}}</td>
+                <td>{{user.updated_at}}</td>
+                <td><a href="/edit/{{user.id}}"><button type="button" class="btn btn-primary">Edit</button></a>
+                    <a href="/delete_user/{{user.id}}"><button type="button" class="btn btn-danger">Delete
+                            user</button></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/users"><h4><button type="button" class="btn btn-info">Home</button></h4></a>
+    <!--     
+    <h1>user </h1>
+        <p>ID: {{user.id}}</p>
+        <p>First Name: {{user.first_name}}</p>
+        <p>Last Name: {{user.last_name}}</p>
+        <p>Email: {{user.email}}</p>
+        <p>Created at: {{user.created_at}}</p>
+        <p>Updated at: {{user.updated_at}}</p>
+        <a href="/edit/{{user.id}}">edit user</a>
+        <a href="/delete_user/{{user.id}}">delete user</a>
+
+    <hr> -->
+
+</body>
+
+</html>
