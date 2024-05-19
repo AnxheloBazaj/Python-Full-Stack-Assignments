@@ -9,22 +9,32 @@
 
 <body>
     <h1>Add a Friend</h1>
-    <form action="/create_friend" method="POST">
-        <label for="fname">First Name:</label>
-        <input type="text" name="fname" required>
-        <label for="lname">Last Name:</label >
-        <input type="text" name="lname" required>
-        <label for="occ" >Occupation:</label>
-        <input type="text" name="occ" required>
+    <!-- <form action="/friends/create" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" required>
+        <label for="last_name">Last Name:</label >
+        <input type="text" name="last_name" required>
+        <label for="occupation" >Occupation:</label>
+        <input type="text" name="occupation" required>
+        <input type="submit" value="Add Friend">
+    </form>  -->
+    <form action="/friends/create" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" required>
+        <label for="last_name">Last Name:</label >
+        <input type="text" name="last_name" required>
+        <label for="occupation" >Occupation:</label>
+        <input type="text" name="occupation" required>
         <input type="submit" value="Add Friend">
     </form> 
     <h1>All My Friends</h1>
-    {% for one_friend in all_friends %}
-        <p>First Name: {{one_friend.id}}</p>
+    {% for one_friend in friends %}
+        <p>Id: {{one_friend.id}}</p>
         <p>First Name: {{one_friend.first_name}}</p>
         <p>Last Name: {{one_friend.last_name}}</p>
         <p>Occupation: {{one_friend.occupation}}</p>
-    
+        <a href='/friends/delete/{{one_friend.id}}'>delete</a>
+        <a href="">edit</a>
     <hr>
     {% endfor %}
     
