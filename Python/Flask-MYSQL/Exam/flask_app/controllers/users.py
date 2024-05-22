@@ -117,6 +117,7 @@ def delete():
     data = {"id": session['user_id']}
     Show.delete_users_show(data)
     User.delete_user(data)
+    
     return redirect("/logout")
 
 
