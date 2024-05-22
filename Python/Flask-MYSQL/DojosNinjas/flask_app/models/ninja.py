@@ -17,17 +17,17 @@ class Ninja:
 
     # Now we use class methods to query our database
     @classmethod
-    def get_all(cls):
-        query = "SELECT * FROM ninjas;"
+    def get_ninja_by_id(cls, data):
+        query = "SELECT * FROM ninjas WHERE id=%(id)s;"
         # make sure to call the connectToMySQL function with the schema you are targeting.
-        results = connectToMySQL(cls.db_name).query_db(query)
+        results = connectToMySQL(cls.db_name).query_db(query, data)
         # Create an empty list to append our instances of friends
         ninjas = []
         # Iterate over the db results and create instances of friends with cls.
         if results:
             for ninja in results:
-                ninjas.append(cls(ninja))
-        return ninja
+                ninjas.append(ninja)
+        return ninjas[0]
 
     @classmethod
     def create(cls, data):
@@ -46,3 +46,12 @@ class Ninja:
             for ninja in results:
                 ninjas.append(ninja)
         return ninjas
+    
+    @classmethod
+    def update(cls, data):
+        query = "UPDATE ninjas SET first_name =%(first_name)s , last_name=%(last_name)s , age= %(age)s WHERE id =%(id)s;"
+        return connectToMySQL(cls.db_name).query_db(query, data)
+    @classmethod
+    def delete(cls, data):
+        query = "DELETE FROM ninjas WHERE id =%(id)s;"
+        return connectToMySQL(cls.db_name).query_db(query, data)

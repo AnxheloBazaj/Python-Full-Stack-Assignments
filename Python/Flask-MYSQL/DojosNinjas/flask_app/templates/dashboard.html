@@ -10,11 +10,13 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body class="d-flex justify-content-between">
+<body class="d-flex justify-content-between w-75 ">
     <ul class="list-group">
         <h1>Dojos</h1>
         {%for dojo in dojos%}
-        <li class="list-group-item"><a href="/dojo/ninjas/{{dojo.id}}">{{dojo.name}}</a></li>
+        <li class="list-group-item"><a href="/dojo/ninjas/{{dojo.id}}">
+                <h5>{{dojo.name}}</h5>
+            </a></li>
         {%endfor%}
         <li class="list-group-item"><a href="/add/ninja" class="btn btn-primary">Add Ninja</a></li>
     </ul>
@@ -26,7 +28,6 @@
             <button type="submit" class=" btn btn-primary">add dojo</button>
         </form>
     </div>
-    <a href="/add/ninja">add ninja</a>
 
 
 </body>
