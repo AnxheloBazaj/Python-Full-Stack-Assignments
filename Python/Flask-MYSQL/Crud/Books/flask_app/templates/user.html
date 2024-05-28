@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body class=" w-75 m-auto">
+    <h1>{{user.first_name}} {{user.last_name}}</h1>
+    <div class="d-flex justify-content-evenly">
+        <div>
+            <h3> Favourite Books</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Pages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%if fav_books%}
+                    {%for book in fav_books%}
+                    <tr>
+                        <td>{{book.title}}</td>
+                        <td>{{book.num_of_pages}}</td>
+                    </tr>
+                    {%endfor%}
+                    {%endif%}
+                </tbody>
+            </table>
+        </div>
+        <form action="/add/to_fav/" method="post">
+            <label for="book_id">Choose a Book</label>
+            <select name="book_id" id="book_id" class="form-select">
+                <option disabled selected>Select a Book</option>
+                {% for book in books %}
+                <option value={{book.id}}>{{book.title}}</option>
+                {% endfor %}
+            </select>
+            <input type="hidden" id="user_id" name="user_id" value={{user.id}}>
+            <button type="submit" class="btn btn-primary">Add to Users Fav</button>
+        </form>
+    </div>
+    <a href="/" class="btn btn-primary">Home</a>
+</body>
+
+</html>

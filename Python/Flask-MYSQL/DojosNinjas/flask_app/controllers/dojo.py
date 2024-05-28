@@ -6,6 +6,7 @@ from flask_app.models.ninja import Ninja
 @app.route('/')
 def dashboard():
     dojos = Dojo.get_all()
+    # return dojos
     return render_template('dashboard.html', dojos=dojos)
 
 
